@@ -23,6 +23,7 @@ def main() -> int:
         return 1
     with open(path, "w", encoding="utf-8") as f:
         f.write(text + "\n")
+    print(f"wrote {len(text)} chars to {path}")
     return 0
 
 
